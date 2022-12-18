@@ -11,7 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 public class _0_Hooks {
-    //@Before (order = 0) //import from cucumber
+    @Before (order = 0) //import from cucumber
     public void setupScenario(){
         System.out.println("====Setting up browser using cucumber @Before");
     }
