@@ -9,6 +9,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+import java.nio.file.LinkOption;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
@@ -38,7 +40,7 @@ public class Driver {
             String browserType = ConfigurationReader.getProperty("browser");
 
             /*
-            depending on the browserType that will be returned from configuration.properties file if statement will determine the case, and open the matching browser
+            depending on the browserType that will be returned from configuration.properties file, if statement will determine the case, and open the matching browser
              */
             if (browserType.equalsIgnoreCase("chrome")){
                 ChromeOptions options = new ChromeOptions();
